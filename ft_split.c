@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:09:33 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/22 19:16:07 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/04/24 21:55:56 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ static size_t	ft_strlen_until_c(char const *str, char c)
 	return (len);
 }
 
-static size_t ft_string_count(char const *s, char c)
+static size_t	ft_string_count(char const *s, char c)
 {
 	size_t	s_index;
 	size_t	string_count;
-	
+
 	s_index = 0;
 	string_count = 0;
 	while (*(s + s_index) != 0)
@@ -45,6 +45,7 @@ static size_t ft_string_count(char const *s, char c)
 	}
 	return (string_count);
 }
+
 static char	**ft_error_handling(char const *s, char c)
 {
 	char	**ptr;
@@ -61,31 +62,31 @@ static char	**ft_error_handling(char const *s, char c)
 			s++;
 			in++;
 		}
-	*(*ptr + in) = 0;
-	*(ptr + 1) = NULL;
-	return (ptr);
+		*(*ptr + in) = 0;
+		*(ptr + 1) = NULL;
+		return (ptr);
 	}
-
 	ptr = (char **) malloc(1 * sizeof(char *));
-	
 	*ptr = NULL;
 	return (ptr);
 }
 
-static char	**ft_split_2(char const *s, char c, char **split, size_t string_count)
+static char	**ft_split_2(char const *s, char c,
+	char **split, size_t string_count)
 {
 	size_t	out;
 	size_t	in;
 	size_t	s_index;
 	size_t	len;
-	
+
 	out = 0;
 	s_index = 0;
 	while (out < string_count)
 	{
 		while (*(s + s_index) == c)
 			s_index++;
-		(*(split + out)) = (char *) malloc ((ft_strlen_until_c((s + s_index), c) + 1) * sizeof(char));
+		(*(split + out)) = (char *) malloc
+			((ft_strlen_until_c((s + s_index), c) + 1) * sizeof(char));
 		if ((*(split + out)) == 0)
 			return (NULL);
 		in = 0;
@@ -97,9 +98,10 @@ static char	**ft_split_2(char const *s, char c, char **split, size_t string_coun
 	}
 	return (split);
 }
+
 char	**ft_split(char const *s, char c)
 {
-	char **split;
+	char	**split;
 
 	if (s == NULL)
 		return (NULL);
@@ -109,7 +111,7 @@ char	**ft_split(char const *s, char c)
 	return (split = ft_split_2(s, c, split, ft_string_count(s, c)));
 }
 
-#include <unistd.h>
+/* #include <unistd.h>
 int	main()
 {
 	char**	ptr;
@@ -131,4 +133,4 @@ int	main()
 	out++;
 	}
 	return (0);
-}
+} */
