@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 14:43:44 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/27 17:31:56 by apinho-a         ###   ########.fr       */
+/*   Created: 2026/04/27 17:15:32 by apinho-a          #+#    #+#             */
+/*   Updated: 2026/04/27 17:39:32 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+/* static t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_struct;
 
@@ -24,16 +24,36 @@ t_list	*ft_lstnew(void *content)
 	new_struct->content = content;
 	new_struct->next = NULL;
 	return (new_struct);
-}
-/* #include <stdio.h>
-int	main()
+} */
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list *test_struct;
+	if (lst == NULL)
+		return (NULL);
+	while (lst->next != 0)
+	{
+		lst = lst->next;
+	}
+	return (lst);
+}
 
-	test_struct = ft_lstnew("hello");
-	printf("%s\n", (char *) test_struct->content);
-	if (test_struct->next == NULL)
-		printf("%s\n", "next is correct");
-	free(test_struct);
-	return (0);
+/* #include <stdio.h>
+int	main ()
+{
+	t_list *node1;
+	t_list *node2;
+	t_list *node3;
+	t_list *ptr;
+
+	node1 = ft_lstnew("1");
+	node2 = ft_lstnew("2");
+	node3 = ft_lstnew("3");
+
+	ptr = node1;
+	printf("%s\n", (char *) ptr->content);
+	node1->next = node2;
+	node2->next = node3;
+	node3->next = NULL;
+
+	ptr = ft_lstlast(ptr);
+	printf("%s\n", (char *) ptr->content);
 } */

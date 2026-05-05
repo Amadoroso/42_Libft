@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 15:37:50 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/27 16:32:38 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/04/29 17:01:40 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@
 } */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *(lst + 0);
-	*(lst + 0) = new;
+	if (lst == NULL || new == NULL)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 
 /* #include <stdio.h>
