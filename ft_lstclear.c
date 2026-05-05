@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 14:01:23 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/05 15:06:49 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/05 15:19:50 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 	len = 0;
 	while (*(content_tofill + len) != 0)
 		len++;
-	result = (char *) malloc(sizeof(char) * len);
+	result = (char *) malloc(sizeof(char) * (len + 1));
 	i = 0;
 	while (*content_tofill != 0)
 	{
