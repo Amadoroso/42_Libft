@@ -6,12 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 16:34:12 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/05 13:23:48 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/05 15:06:22 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /* static t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_struct;
