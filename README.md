@@ -23,13 +23,13 @@
 
 ### Libft.a compilation
 
-**To compile `libft.h` into an archive use:** `make libft.a` or `make`
+**To compile `libft.h` into an archive use:** `make libft.a` or `make`.
 
 ### File removal
 
-**To remove any `ft*.o` file use:** `make clean`;
+**To remove any `ft*.o` file use:** `make clean`.
 
-**To remove `libft.a` and any `ft_*.o` file use:** `make fclean`;
+**To remove `libft.a` and any `ft_*.o` file use:** `make fclean`.
 
 
 ## Resources
@@ -38,7 +38,7 @@
 
 - **[W3 School C](https://www.w3schools.com/c/index.php)** course was mainly used to understand novel C concepts;
 - **[SYNTAX Unlocking session](https://github.com/Carlos-o-Grande/Unlocking_Sessions-42_School_Kick-Off)** Deep-dive into Syntax by a fellow 42 colleague;
-- **[Makefile Tutorial](https://makefiletutorial.com/)** is a fantastic guide to understanding Makefile;
+- **[Makefile Tutorial](https://makefiletutorial.com/)** is a fantastic guide to understanding Makefile.
 
 ### LLM Usage Disclosure
 
