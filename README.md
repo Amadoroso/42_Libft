@@ -1,5 +1,5 @@
 # 42_Libft
----
+
 *This project has been created as part of the 42 curriculum by apinho-a*
 
 ## Description
@@ -14,11 +14,9 @@
 
 - **Part 3**: A complete set of functions to handle linked lists using a custom `t_list` structure defined in the `libft.h` file.
 
-
->[!info]
+>[!NOTE]
 >All code adheres to **42 Norm** and can be compiled into a `libft.a` static library using a provided `Makefile`.
 
----
 ## Instructions
 
 ### Libft.a compilation
@@ -30,7 +28,6 @@
 **To remove any `ft*.o` file use:** `make clean`;
 **To remove `libft.a` and any `ft_*.o` file use:** `make fclean`;
 
----
 ## Resources
 
 ### References
