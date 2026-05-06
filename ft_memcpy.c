@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 14:54:33 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/14 18:03:10 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:53:07 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -25,7 +25,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/* #include <unistd.h>
+/*
 int	main()
 {
 	char *src ="abcdefghij";

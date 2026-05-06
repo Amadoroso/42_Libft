@@ -6,21 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:58:31 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/21 18:38:47 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:55:30 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (*str++)
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -48,7 +38,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (s1_s2);
 }
 
-/* #include <stdio.h>
+/*
 int main()
 {
 	char *joined;

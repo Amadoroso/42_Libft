@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 12:51:16 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/14 17:02:27 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:53:18 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -24,7 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-/* #include <unistd.h>
+/*
 int	main()
 {
 	unsigned char b_str[18] = "xxxxxxxxxxxxxxxxx";

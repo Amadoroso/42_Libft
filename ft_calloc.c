@@ -6,33 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:46:34 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/21 16:30:36 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 14:01:18 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-size_t	ft_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (*str++)
-		len++;
-	return (len);
-}
-
-static void	*ft_memset(void *b, int c, size_t len)
-{
-	unsigned char	c_char;
-	unsigned char	*b_str;
-
-	c_char = (unsigned char) c;
-	b_str = (unsigned char *) b;
-	while (len--)
-		*b_str++ = c_char;
-	return (b);
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t nmeb, size_t size)
 {
@@ -53,8 +31,7 @@ void	*ft_calloc(size_t nmeb, size_t size)
 	}
 }
 
-/* #include <stdio.h>
-int	main()
+/* int	main()
 {
 	int	*array_1;
 	int	*array_2;

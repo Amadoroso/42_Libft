@@ -6,24 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/29 16:34:12 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/05 15:06:22 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:22:58 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* static t_list	*ft_lstnew(void *content)
-{
-	t_list	*new_struct;
-
-	if (content == NULL)
-		return (NULL);
-	new_struct = (t_list *) malloc(sizeof(t_list));
-	if (new_struct == NULL)
-		return (NULL);
-	new_struct->content = content;
-	new_struct->next = NULL;
-	return (new_struct);
-} */
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -42,7 +29,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	traveler->next = new;
 }
 
-/* #include <stdio.h>
+/*
 int	main()
 {
 	t_list	*ptr_node1;

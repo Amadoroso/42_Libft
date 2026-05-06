@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 17:23:45 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 14:01:49 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:53:04 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -37,7 +37,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-/* #include <unistd.h>
+/*
 int main()
 {
 	unsigned char src[14] = "Learningisfun";

@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:04:21 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 15:04:13 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:55:40 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
@@ -38,7 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 }
 
-/* #include <stdio.h>
+/*
 int	main()
 {
 	char	src[7] = "ABCDEF";

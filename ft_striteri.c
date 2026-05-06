@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 00:21:05 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/27 11:51:34 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:55:14 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-/* #include <stdio.h>
+/* #include "libft.h"
 int	main()
 {
 	char str[5] = "abcd";

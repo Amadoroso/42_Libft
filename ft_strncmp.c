@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 17:17:12 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 18:01:39 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:57:19 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -25,8 +25,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char) *s1 - (unsigned char) *s2);
 }
 
-/* #include <string.h>
-#include <stdio.h>
+/*
 int	main()
 {
 	printf("%d\n", ft_strncmp("AAz", "AAa", 4));

@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 18:29:53 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 19:25:44 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:52:35 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -29,7 +29,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (*ptr1 - *ptr2);
 }
 
-/* #include <stdio.h>
+/*
 int	main()
 {
 	printf("%d\n", ft_memcmp("aaa123~", "aaa1234",7));

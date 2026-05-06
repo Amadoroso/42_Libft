@@ -6,21 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 14:57:33 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/21 15:57:42 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:54:54 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-unsigned int	ft_strlen(const char *str)
-{
-	unsigned int	len;
-
-	len = 0;
-	while (*str++)
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
@@ -41,8 +31,7 @@ char	*ft_strdup(const char *s)
 	return (dup);
 }
 
-/* #include <unistd.h>
-#include <string.h>
+/*
 int	main()
 {
 	char 			*dup;

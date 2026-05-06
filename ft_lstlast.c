@@ -6,25 +6,12 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 17:15:32 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/27 17:39:32 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:50:07 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* static t_list	*ft_lstnew(void *content)
-{
-	t_list	*new_struct;
-
-	if (content == NULL)
-		return (NULL);
-	new_struct = (t_list *) malloc(sizeof(t_list));
-	if (new_struct == NULL)
-		return (NULL);
-	new_struct->content = content;
-	new_struct->next = NULL;
-	return (new_struct);
-} */
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
@@ -36,7 +23,7 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-/* #include <stdio.h>
+/*
 int	main ()
 {
 	t_list *node1;

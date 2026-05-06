@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:09:33 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/24 21:55:56 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:54:26 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static size_t	ft_strlen_until_c(char const *str, char c)
 {
@@ -111,7 +111,7 @@ char	**ft_split(char const *s, char c)
 	return (split = ft_split_2(s, c, split, ft_string_count(s, c)));
 }
 
-/* #include <unistd.h>
+/*
 int	main()
 {
 	char**	ptr;

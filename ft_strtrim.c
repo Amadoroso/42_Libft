@@ -6,34 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 18:41:06 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/22 16:08:37 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:58:38 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	len;
-
-	len = 0;
-	while (*str++)
-		len++;
-	return (len);
-}
-
-static char	*ft_strchr(const char *s, int c)
-{
-	while (*s)
-	{
-		if (*s == (char) c)
-			return ((char *) s);
-		s++;
-	}
-	if (*s == 0 && (char) c == 0)
-		return ((char *) s);
-	return (0);
-}
+#include "libft.h"
 
 static char	*ft_strcpy_custom(char *dst, const char *src, size_t start,
 size_t end)
@@ -49,25 +26,6 @@ size_t end)
 	}
 	*(dst + index) = 0;
 	return (dst);
-}
-
-static char	*ft_strdup(const char *s)
-{
-	char			*dup;
-	unsigned int	index;
-
-	dup = (char *) malloc((ft_strlen(s) + 1) * sizeof(char));
-	if (dup == 0)
-		return (NULL);
-	index = 0;
-	while (*s)
-	{
-		*(dup + index) = *s;
-		s++;
-		index++;
-	}
-	*(dup + index) = 0;
-	return (dup);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -96,7 +54,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (result = ft_strcpy_custom(result, s1, start, end));
 }
 
-/* #include <stdio.h>
+/*
 int	main()
 {
 	char	*a;

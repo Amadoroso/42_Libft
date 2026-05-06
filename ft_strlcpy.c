@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 12:07:19 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 14:01:52 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:56:08 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -32,7 +32,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (len);
 }
 
-/* #include <unistd.h>
+/*
 int	main()
 {
 	char	dst[5];

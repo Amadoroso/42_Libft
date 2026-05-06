@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:43:44 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/27 17:31:56 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:50:25 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ t_list	*ft_lstnew(void *content)
 	new_struct->next = NULL;
 	return (new_struct);
 }
-/* #include <stdio.h>
+/*
 int	main()
 {
 	t_list *test_struct;
