@@ -6,7 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 16:44:37 by apinho-a          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2026/05/06 13:18:08 by apinho-a         ###   ########.fr       */
+=======
+/*   Updated: 2026/04/20 18:28:47 by apinho-a         ###   ########.fr       */
+>>>>>>> 7b6dbf524261091794e4e775973069091201d6e2
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +39,12 @@ int	ft_atoi(const char *nptr)
 	return (result);
 }
 
+<<<<<<< HEAD
 /* #include "libft.h"
+=======
+/* #include <stdio.h>
+#include <stdlib.h>
+>>>>>>> 7b6dbf524261091794e4e775973069091201d6e2
 int	main()
 {
 	printf("%d\n", ft_atoi("	-1x234a"));
