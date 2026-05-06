@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 14:04:21 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:55:40 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 19:52:23 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 }
 
-/*
-int	main()
+/* int	main()
 {
 	char	src[7] = "ABCDEF";
 	char	dst[7] = "123456";
@@ -48,5 +47,23 @@ int	main()
 	len = ft_strlcat(dst, src, 12);
 	printf("%zu\n", len);
 	printf("%s", dst);
+	return (0);
+} */
+
+/* int main()
+{
+	char	*dst;
+	size_t len;
+
+	dst = (char *) malloc(sizeof(*dst) * 15);
+	ft_memset(dst, 'r', 15);
+	len = ft_strlcat(dst, "lorem ipsum dolor sit amet", 5);
+	printf("%zu\n", len);
+	printf("%s\n", dst);
+	ft_memset(dst, 'r', 15);
+	len = strlcat(dst, "lorem ipsum dolor sit amet", 5);
+	printf("%zu\n", len);
+	printf("%s\n", dst);
+	free(dst);
 	return (0);
 } */

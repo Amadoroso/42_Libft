@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 14:34:26 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:18:17 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 18:53:30 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	if (n != 0)
-	{
-		while (n--)
-			*((unsigned char *) s + n) = '\0';
-	}
+	while (n--)
+		*((unsigned char *) s + n) = '\0';
 }
 
 /* #include <unistd.h>
