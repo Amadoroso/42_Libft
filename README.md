@@ -28,6 +28,7 @@
 ### File removal
 
 **To remove any `ft*.o` file use:** `make clean`;
+
 **To remove `libft.a` and any `ft_*.o` file use:** `make fclean`;
 
 
