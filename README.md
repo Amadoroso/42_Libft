@@ -2,6 +2,7 @@
 
 *This project has been created as part of the 42 curriculum by apinho-a*
 
+
 ## Description
 
 **Libft** is a user defined custom C library containing reimplementations of standard `libc` functions and additional utility tools. It serves as the foundational library for all future C projects in the 42 curriculum.
@@ -17,6 +18,7 @@
 >[!NOTE]
 >All code adheres to **42 Norm** and can be compiled into a `libft.a` static library using a provided `Makefile`.
 
+
 ## Instructions
 
 ### Libft.a compilation
@@ -27,6 +29,7 @@
 
 **To remove any `ft*.o` file use:** `make clean`;
 **To remove `libft.a` and any `ft_*.o` file use:** `make fclean`;
+
 
 ## Resources
 
