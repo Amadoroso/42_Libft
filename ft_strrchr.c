@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 16:31:11 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/17 18:03:09 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:57:56 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-/* #include <stdio.h>
-#include <string.h>
+/*
+#include "libft.h"
 int	main()
 {
 	printf("%s\n", ft_strrchr("aaaaBaaaa1aa", 49));

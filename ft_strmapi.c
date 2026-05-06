@@ -6,31 +6,17 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 21:56:56 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/24 23:39:15 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:57:06 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
+#include "libft.h"
 /* static char	ft_capitalization_pairs(unsigned int index, char character)
 {
 	if (character >= 'a' && character <= 'z' && index % 2 == 0)
 		character -= 32;
 	return (character);
 } */
-
-static size_t	ft_strlen(char const *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (*s)
-	{
-		s++;
-		len++;
-	}
-	return (len);
-}
 
 char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 {
@@ -54,7 +40,7 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	return (s2);
 }
 
-/* #include <stdio.h>
+/*
 int	main()
 {
 	char	*str;

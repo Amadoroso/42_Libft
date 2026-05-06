@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 14:01:23 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/05 15:19:50 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:48:01 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,48 +30,7 @@
 	}
 	*(result + i) = 0;
 	return (result);
-}
-int	ft_lstsize(t_list *lst)
-{
-	int		size;
-
-	size = 0;
-	while (lst != NULL)
-	{
-		lst = lst->next;
-		size++;
-	}
-	return (size);
-}
-static void	ft_lstadd_back(t_list **lst, t_list *new)
-{
-	t_list	*traveler;
-
-	if (!lst || !new)
-		return ;
-	if (*lst == NULL)
-	{
-		*lst = new;
-		return ;
-	}
-	traveler = *lst;
-	while (traveler->next != NULL)
-		traveler = traveler->next;
-	traveler->next = new;
-}
-static t_list	*ft_lstnew(void *content)
-{
-	t_list	*new_struct;
-
-	if (content == NULL)
-		return (NULL);
-	new_struct = (t_list *) malloc(sizeof(t_list));
-	if (new_struct == NULL)
-		return (NULL);
-	new_struct->content = content;
-	new_struct->next = NULL;
-	return (new_struct);
-} */
+}*/
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
@@ -91,8 +50,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	free(content);
 } */
-
-/* #include <stdio.h>
+/*
 int main()
 {
 	t_list *ptr_node1;

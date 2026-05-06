@@ -6,11 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 20:56:28 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/04/24 21:53:35 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/06 13:22:14 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	ft_malloc_len(int n)
 {
@@ -66,7 +66,7 @@ char	*ft_itoa(int n)
 	return (ft_string_filler(nbr, n, size_n));
 }
 
-/* #include <stdio.h>
+/* #include "libft.h"
 int	main()
 {
 	char *nbr;
