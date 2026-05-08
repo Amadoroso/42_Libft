@@ -6,9 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 12:06:39 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:20:39 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:24:22 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -17,7 +19,7 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	char	writer;

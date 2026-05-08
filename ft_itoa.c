@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 20:56:28 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:22:14 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:24:32 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char	*ft_itoa(int n)
 	return (ft_string_filler(nbr, n, size_n));
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	char *nbr;

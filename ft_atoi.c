@@ -6,9 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 16:44:37 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:18:08 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:23:16 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -35,7 +37,7 @@ int	ft_atoi(const char *nptr)
 	return (result);
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	printf("%d\n", ft_atoi("	-1x234a"));

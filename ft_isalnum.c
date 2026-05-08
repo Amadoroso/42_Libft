@@ -6,9 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 14:51:11 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:20:09 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:26:35 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {
@@ -19,12 +21,12 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-/* #include "libft.h"
-int	main()
-{
-	char	writer;
+	/*
+	int	main(void)
+	{
+		char	writer;
 
-	writer = (ft_isalnum('2') + 48);
-	write(1, &writer, 1);
-	return(0);
-} */
+		writer = (ft_isalnum('2') + 48);
+		write(1, &writer, 1);
+		return(0);
+	} */
