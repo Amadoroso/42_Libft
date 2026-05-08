@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:25:12 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 14:26:25 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:44:26 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdio.h>
+/* # include <bsd/string.h> */
 
 // part 1
 int		ft_isalpha(int character);
