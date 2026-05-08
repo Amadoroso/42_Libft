@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/17 15:04:56 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 14:00:20 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:28:45 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	char	c;

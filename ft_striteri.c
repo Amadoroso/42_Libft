@@ -6,9 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 00:21:05 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:55:14 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:27:54 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /* static void	ft_capitalization_pairs(unsigned int index, char *c)
 {
@@ -30,7 +32,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	char str[5] = "abcd";

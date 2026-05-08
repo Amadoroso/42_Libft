@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:46:34 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 14:01:18 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:22:46 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ void	*ft_calloc(size_t nmeb, size_t size)
 	size_t	index;
 
 	nmeb = 4;
-	array_1 = (int *) ft_calloc (nmeb, sizeof(int));
-	array_2 = (int *) calloc (nmeb, sizeof(int));
+	array_1 = (int *) ft_calloc (0, sizeof(NULL));
+	array_2 = (int *) calloc (0, sizeof(NULL));
 	index = 0;
 	while (index < nmeb)
 	{

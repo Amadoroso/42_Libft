@@ -6,9 +6,11 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 13:21:08 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:20:21 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 15:24:10 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int character)
 {
@@ -19,7 +21,7 @@ int	ft_isalpha(int character)
 		return (0);
 }
 
-/* #include "libft.h"
+/*
 int	main()
 {
 	char	writer;
