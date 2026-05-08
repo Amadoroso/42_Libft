@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 14:34:26 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/08 15:23:02 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 19:27:28 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,7 @@ void	ft_bzero(void *s, size_t n)
 		*((unsigned char *) s + n) = '\0';
 }
 
-/*
-int	main()
+/* int	main()
 {
 	unsigned char s[10] = "Ola Adeus";
 	int index;
@@ -29,4 +28,5 @@ int	main()
 	while (s[index++])
 		write(1, &s[index], 1);
 	return (0);
+	printf("%lu\n", sizeof(int));
 } */

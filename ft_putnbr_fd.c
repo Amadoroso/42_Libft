@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 13:16:48 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:53:51 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/08 18:01:05 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,12 @@ void	ft_putnbr_fd(int n, int fd)
 	c = (n % 10) + 48;
 	write(fd, &c, 1);
 }
+/* #include <fcntl.h>
+int main ()
+{
+	int fd;
+
+	fd = open("a", O_RDWR | O_CREAT, 0644);
+	ft_putnbr_fd(-245, fd);
+	return (0);
+} */
