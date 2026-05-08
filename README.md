@@ -31,7 +31,7 @@
 
 **To remove `libft.a` and any `ft_*.o` file use:** `make fclean`.
 
-### Single function compilation
+### Compiling with libft.a
 
 **To compile a program that uses a function from libft.a file**: `cc -Wall -Wextra -Werror code.c libft.a -o program.out`
 
