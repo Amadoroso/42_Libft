@@ -33,7 +33,7 @@
 
 ### Single function compilation
 
-**To compile a program that uses a function from libft.a file**: cc -Wall -Wextra -Werror code.c libft.a -o program.out
+**To compile a program that uses a function from libft.a file**: `cc -Wall -Wextra -Werror code.c libft.a -o program.out`
 
 ## Resources
 
