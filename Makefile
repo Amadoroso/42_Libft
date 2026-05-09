@@ -6,7 +6,7 @@
 #    By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/06 15:13:50 by apinho-a          #+#    #+#              #
-#    Updated: 2026/05/06 17:41:42 by apinho-a         ###   ########.fr        #
+#    Updated: 2026/05/09 20:35:24 by apinho-a         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+	rm -fr a.out
 
 re: fclean all
 
