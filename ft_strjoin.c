@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:58:31 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:55:30 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 21:22:27 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,28 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	index;
 	char	*s1_s2;
+	size_t	len1;
+	size_t	len2;
 
-	if (s1 == 0 || s2 == 0)
+	if (!s1 && !s2)
 		return (NULL);
-	s1_s2 = (char *) malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	s1_s2 = (char *) ft_calloc((len1 + len2 + 1),
+			sizeof(char));
 	if (s1_s2 == 0)
 		return (NULL);
-	index = 0;
-	while (s1[index])
-	{
-		*(s1_s2 + index) = *(s1 + index);
-		index++;
-	}
-	while (*s2)
-	{
-		*(s1_s2 + index) = *s2;
-		s2++;
-		index++;
-	}
-	*(s1_s2 + index) = 0;
+	ft_strlcpy(s1_s2, s1, len1 + 1);
+	ft_strlcpy(s1_s2 + len1, s2, len2 + 1);
 	return (s1_s2);
 }
 
-/*
-int main()
+/* int main()
 {
 	char *joined;
 	

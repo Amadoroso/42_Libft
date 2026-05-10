@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 13:16:48 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/08 18:01:05 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 20:16:44 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	c;
-
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
@@ -28,8 +26,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n > 9)
 		ft_putnbr_fd ((n / 10), fd);
-	c = (n % 10) + 48;
-	write(fd, &c, 1);
+	ft_putchar_fd((n % 10) + 48, fd);
 }
 /* #include <fcntl.h>
 int main ()

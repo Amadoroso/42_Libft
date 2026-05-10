@@ -6,16 +6,16 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 13:21:08 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/08 15:24:10 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 21:23:44 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int character)
+int	ft_isalpha(int c)
 {
-	if ((character >= 65 && character <= 90)
-		|| (character >= 97 && character <= 122))
+	if ((c >= 65 && c <= 90)
+		|| (c >= 97 && c <= 122))
 		return (1);
 	else
 		return (0);

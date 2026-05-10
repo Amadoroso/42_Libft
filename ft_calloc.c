@@ -6,28 +6,26 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:46:34 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/08 15:22:46 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 20:04:26 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmeb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	max_val;
 	void	*result;
 
 	max_val = -1;
-	if (nmeb == 0 || size == 0)
-		return (malloc(0));
-	else if (size > max_val / nmeb)
+	if (nmemb != 0 && size > max_val / nmemb)
 		return (NULL);
 	else
 	{
-		result = malloc (nmeb * size);
+		result = malloc (nmemb * size);
 		if (!result)
 			return (NULL);
-		return (ft_memset(result, '\0', nmeb * size));
+		return (ft_memset(result, '\0', nmemb * size));
 	}
 }
 

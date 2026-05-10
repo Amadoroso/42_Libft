@@ -6,13 +6,13 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 14:33:17 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:20:36 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 20:04:25 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int character)
+int	ft_isdigit(int c)
 {
-	if (character >= 48 && character <= 57)
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
