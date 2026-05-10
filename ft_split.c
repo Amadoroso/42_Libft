@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:34:11 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/10 18:34:39 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 19:12:04 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,24 +98,24 @@ char	**ft_split(char const *s, char c)
 	ptr_strings = (char **) ft_calloc(word_counter + 1, sizeof(char *));
 	index_ptr = 0;
 	if (!ptr_strings)
-		return (ft_calloc_error_handler(ptr_strings, index_ptr));
+		return (NULL);
 	return (ft_split_actual(ptr_strings, s, c, index_ptr));
 }
 
 /* int	main ()
 {
 	char **ptr_strings;
+	int i;
 
-	ptr_strings = ft_split(NULL, 0);
+	ptr_strings = ft_split("hello", 32);
 	if (!ptr_strings)
+		return (0);
+	i = 0;
+	while (ptr_strings[i] != 0)	
 	{
-		printf("%s\n", "NULl was passed");
-		return (0);		
+		free(ptr_strings[i]);
+		i++;
 	}
-	while (*ptr_strings != 0)
-	{
-		printf("%s\n", *ptr_strings);
-		ptr_strings++;
-	}
+	free(ptr_strings);
 	return (0);
 } */
