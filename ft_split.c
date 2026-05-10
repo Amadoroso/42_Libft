@@ -5,132 +5,83 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/22 16:09:33 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:54:26 by apinho-a         ###   ########.fr       */
+/*   Created: 2026/05/09 18:34:11 by apinho-a          #+#    #+#             */
+/*   Updated: 2026/05/10 15:33:15 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	ft_strlen_until_c(char const *str, char c)
+static int		ft_word_counter(char const *s, char c)
 {
-	size_t	len;
-
-	len = 0;
-	while (*str && *str != c)
+	int	word_counter;
+	
+	word_counter = 0;
+	while (*s != 0 && c != 0)
 	{
-		len++;
-		str++;
+		if (*s == c && *(s + 1) != c && *(s + 1) != 0)
+			word_counter++;
+		s++;
 	}
-	return (len);
-}
-
-static size_t	ft_string_count(char const *s, char c)
-{
-	size_t	s_index;
-	size_t	string_count;
-
-	s_index = 0;
-	string_count = 0;
-	while (*(s + s_index) != 0)
-	{
-		while (*(s + s_index) == c)
-			s_index++;
-		if (*(s + s_index) != c && *(s + s_index) != 0)
-		{
-			string_count++;
-			while (*(s + s_index) != c && *(s + s_index) != 0)
-				s_index++;
-		}
-	}
-	return (string_count);
-}
-
-static char	**ft_error_handling(char const *s, char c)
-{
-	char	**ptr;
-	size_t	in;
-
-	if (s != NULL && c == '\0' && *s != 0)
-	{
-		ptr = (char **) malloc(2 * sizeof(char *));
-		*ptr = (char *) malloc((ft_strlen_until_c(s, '\0') + 1) * sizeof(char));
-		in = 0;
-		while (*s != 0)
-		{
-			*(*ptr + in) = *s;
-			s++;
-			in++;
-		}
-		*(*ptr + in) = 0;
-		*(ptr + 1) = NULL;
-		return (ptr);
-	}
-	ptr = (char **) malloc(1 * sizeof(char *));
-	*ptr = NULL;
-	return (ptr);
-}
-
-static char	**ft_split_2(char const *s, char c,
-	char **split, size_t string_count)
-{
-	size_t	out;
-	size_t	in;
-	size_t	s_index;
-	size_t	len;
-
-	out = 0;
-	s_index = 0;
-	while (out < string_count)
-	{
-		while (*(s + s_index) == c)
-			s_index++;
-		(*(split + out)) = (char *) malloc
-			((ft_strlen_until_c((s + s_index), c) + 1) * sizeof(char));
-		if ((*(split + out)) == 0)
-			return (NULL);
-		in = 0;
-		len = ft_strlen_until_c((s + s_index), c);
-		while (in < len && *(s + s_index) != c && *(s + s_index) != 0)
-			split[out][in++] = s[s_index++];
-		*(*(split + out) + in) = 0;
-		out++;
-	}
-	return (split);
+	return (word_counter);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**split;
+char	**ptr_strings;
+char	*string;
+int		word_counter;
+int		index_ptr;
+int		i;
+int		j;
+int		k;
 
-	if (s == NULL)
-		return (NULL);
-	if (*s == '\0' || c == '\0')
-		return (ft_error_handling(s, c));
-	split = (char **) malloc ((ft_string_count(s, c) + 1) * sizeof(char *));
-	return (split = ft_split_2(s, c, split, ft_string_count(s, c)));
+if (!s || !c)
+	return((char **) ft_calloc(1, sizeof(char*)));
+word_counter = ft_word_counter(s, c);
+ptr_strings = (char **) ft_calloc(word_counter + 1, sizeof(char*));
+if (!ptr_strings)
+	return (NULL);
+index_ptr = 0;
+i = 0;
+while (s[i] != 0 && c != 0)
+{
+	while (s[i] == c && s[i + 1] == c)
+		i++;
+	if (s[i] == c && s[i + 1] != c)
+	{
+		i++;
+		j = 0;
+		while (s[i + j] != c && s[i + j] != 0)
+			j++;
+		if (s[i] == 0)
+			return (ptr_strings);
+		string = (char *) ft_calloc(j + 1, sizeof(char));
+		*(ptr_strings + index_ptr) = string;
+		index_ptr++;
+		if (!string)
+			return (ptr_strings);
+		k = 0;
+		while (k < j)
+		{
+			string[k] = s[i];
+			k++;
+			i++;
+		}
+	}
+}
+return (ptr_strings);
 }
 
-/*
-int	main()
+/* int	main ()
 {
-	char**	ptr;
-	size_t	out;
-	size_t	in;
+	char **ptr_strings;
 
-	ptr = ft_split(NULL, '\0');
-
-	out = 0;
-	while (*(ptr + out) != 0)
+	ptr_strings = ft_split(NULL, 0);
+	while (*ptr_strings != 0)
 	{
-		in = 0;
-		while (*(*(ptr + out) + in) != 0)
-		{
-			write(1 , (*(ptr + out) + in), 1);
-			in++;
-		}
-	write (1, "\n", 1);
-	out++;
+		printf("%s\n", *ptr_strings);
+		ptr_strings++;
 	}
 	return (0);
 } */
