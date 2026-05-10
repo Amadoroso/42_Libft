@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 15:43:28 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/06 13:50:15 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 19:26:15 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		node = ft_lstnew(new_content);
 		if (node == NULL || new_content == NULL)
 		{
-			del(new_content);
+			if (!new_content)
+				del(new_content);
+			free(node);
 			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}
