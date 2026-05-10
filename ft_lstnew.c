@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 14:43:44 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/08 16:16:50 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/10 18:49:51 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_struct;
 
-	if (content == NULL)
-		return (NULL);
 	new_struct = (t_list *) malloc(sizeof(t_list));
 	if (new_struct == NULL)
 		return (NULL);
