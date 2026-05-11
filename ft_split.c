@@ -6,7 +6,7 @@
 /*   By: apinho-a <apinho-a@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 18:34:11 by apinho-a          #+#    #+#             */
-/*   Updated: 2026/05/10 20:18:44 by apinho-a         ###   ########.fr       */
+/*   Updated: 2026/05/11 18:27:37 by apinho-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ static int	ft_string_filler(char **string, char const *s, int j, int i)
 	return (i);
 }
 
-char	**ft_split_actual(char **ptr_strings, char const *s,
+char static	**ft_split_actual(char **ptr_strings, char const *s,
 						char c, int index_ptr)
 {
 	char	*string;
